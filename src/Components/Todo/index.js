@@ -4,6 +4,8 @@ import "./style.css";
 function Todo() {
   const [item, setItem] = useState("");
   const [list, setlist] = useState([]);
+  const [editlist, editsetlist] = useState(null);
+
 
   function addList() {
     setlist((list) => {
@@ -20,6 +22,11 @@ function Todo() {
   }
   function removeAll (){
     setlist([])
+  }
+  function editList(id){
+    const findList = list.find((i)=>i.id == id)
+    editsetlist(findList);
+
   }
   return (
     <>
@@ -45,7 +52,7 @@ function Todo() {
                   <p key={i}>
                     <div className="listItems">
                       <div className="textField">{data}</div>
-                      <button className="button">Edit</button>
+                      <button className="button" onClick={() => editList(i)}>Edit</button>
                       <button className="button" onClick={() => removeList(i)}>
                         Delete
                       </button>

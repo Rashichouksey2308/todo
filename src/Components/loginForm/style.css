@@ -1,0 +1,27 @@
+.formContainer{
+    background: white;
+    box-shadow: 2px 2px 2px 2px grey;
+    width: 400px;
+    margin: 0 auto;
+    padding: 38px 63px;
+    height: 80vh;
+}
+.loginBtn{
+    border: none;
+    background: gray;
+    color: white;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 2px- 2px white;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-top: 10px;
+}
+input{
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px- 2px white;
+
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+}
