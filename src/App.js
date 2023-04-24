@@ -6,7 +6,10 @@ import "./App.css";
 // import Fetchdata from "./Components/Fetchdata";
 // import Todo from './Components/Todo'
 // import Timerlist from './Components/Timer'
-import Login from './Components/loginForm'
+// import Login from './Components/loginForm'
+import Login from './Components/userLogin'
+import Register from './Components/userReg'
+
 
 
 
@@ -20,7 +23,8 @@ function App() {
       <Fetchdata /> */}
       {/* <Todo/> */}
       {/* <Timerlist /> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </>
   );
 }
